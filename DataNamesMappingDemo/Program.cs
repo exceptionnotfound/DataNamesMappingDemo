@@ -24,7 +24,8 @@ namespace DataNamesMappingDemo
             {
                 Console.WriteLine("First Name: " + person.FirstName + ", Last Name: " + person.LastName
                                   + ", Date of Birth: " + person.DateOfBirth.ToShortDateString()
-                                  + ", Job Title: " + person.JobTitle + ", Nickname: " + person.TakenName);
+                                  + ", Job Title: " + person.JobTitle + ", Nickname: " + person.TakenName
+                                  + ", Is American: " + person.IsAmerican);
             }
 
             Console.ReadLine();

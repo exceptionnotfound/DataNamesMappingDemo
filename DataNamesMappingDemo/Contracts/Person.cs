@@ -23,5 +23,8 @@ namespace DataNamesMappingDemo.Contracts
 
         [DataNames("taken_name", "nickName")]
         public string TakenName { get; set; }
+
+        [DataNames("is_american", "isAmerican")]
+        public bool IsAmerican { get; set; }
     }
 }

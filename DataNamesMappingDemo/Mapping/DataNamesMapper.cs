@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DataNamesMappingDemo.Mapping
 {
-    public class DataNamesMapper<TEntity> : IDataNamesMapper<TEntity> where TEntity : class, new()
+    public class DataNamesMapper<TEntity> where TEntity : class, new()
     {
         public TEntity Map(DataRow row)
         {
@@ -30,7 +30,7 @@ namespace DataNamesMappingDemo.Mapping
             return entity;
         }
 
-        public List<TEntity> Map(DataTable table)
+        public IEnumerable<TEntity> Map(DataTable table)
         {
             List<TEntity> entities = new List<TEntity>();
             var columnNames = table.Columns.Cast<DataColumn>().Select(x => x.ColumnName).ToList();

@@ -14,8 +14,8 @@ namespace DataNamesMappingDemo.Mapping
 
         public static void Map(Type type, DataRow row, PropertyInfo prop, object entity)
         {
-            List<string> columnNames = AttributeHelper.GetOracleColumnNames(type, prop.Name);
-            //Handle .NET Primitives and Structs (e.g. DateTime) here.
+            List<string> columnNames = AttributeHelper.GetDataNames(type, prop.Name);
+
             foreach (var columnName in columnNames)
             {
                 if (!String.IsNullOrWhiteSpace(columnName) && row.Table.Columns.Contains(columnName))

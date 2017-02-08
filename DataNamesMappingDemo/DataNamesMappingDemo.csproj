@@ -48,7 +48,6 @@
     <Compile Include="DataSets\DataSetGenerator.cs" />
     <Compile Include="Mapping\AttributeHelper.cs" />
     <Compile Include="Mapping\DataNamesMapper.cs" />
-    <Compile Include="Mapping\IDataNamesMapper.cs" />
     <Compile Include="Mapping\PropertyMapHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -121,11 +121,13 @@ namespace DataNamesMappingDemo.Mapping
             {
                 case "1":
                 case "y":
+                case "yes":
                 case "true":
                     return true;
 
                 case "0":
                 case "n":
+                case "no":
                 case "false":
                 default:
                     return false;

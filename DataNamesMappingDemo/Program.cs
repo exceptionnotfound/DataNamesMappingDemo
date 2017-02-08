@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataNamesMappingDemo.DataSets;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,7 @@ namespace DataNamesMappingDemo
     {
         static void Main(string[] args)
         {
+            var dataSet = DataSetGenerator.SampleDataSet();
         }
     }
 }

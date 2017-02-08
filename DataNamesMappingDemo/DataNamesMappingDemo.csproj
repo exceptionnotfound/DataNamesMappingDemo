@@ -43,6 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Attributes\DataNamesAttribute.cs" />
+    <Compile Include="Contracts\Person.cs" />
+    <Compile Include="DataSets\DataSetGenerator.cs" />
+    <Compile Include="Mapping\AttributeHelper.cs" />
+    <Compile Include="Mapping\PropertyMapHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

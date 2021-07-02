@@ -36,6 +36,17 @@ namespace DataNamesMappingDemo.Mapping
             {
                 prop.SetValue(entity, value.ToString().Trim(), null);
             }
+            else if (prop.PropertyType == typeof(char))
+            {
+                if (value == null)
+                {
+                    prop.SetValue(entity, null, null);
+                }
+                else
+                {
+                    prop.SetValue(entity, value.ToString()[0], null);
+                }                
+            }
             else if (prop.PropertyType == typeof(bool) || prop.PropertyType == typeof(bool?))
             {
                 if (value == null)
